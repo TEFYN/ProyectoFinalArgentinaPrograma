@@ -1,91 +1,150 @@
 /*********************************************** GENERAL ******************************************************/
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
 }
-
 
 /*********************************************** HEADER ******************************************************/
 
-.header{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #0f292f;
-    height: 7vh;
-    border-right: #cb2d6f;
-    border-width: 5px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: sticky;
+.header {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #d8c3a5;
+  height: 7vh;
+  padding: 2px;
+  border-width: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #e98074;
 }
-ul{
-    list-style-type: none;
-    display: block;
+ul {
+  list-style-type: none;
+  display: block;
+}
 
+.navbar > li {
+  display: inline-block;
 }
-.navbar>li{
-    display: inline;
 
+li > a {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: auto 25px;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #eae7dc;
+  background-color: #e98074;
+  border: none;
 }
-li>a{
-    padding: 10px;
-    text-decoration: none;
-    color: #14A098;
-    text-align: center;
+
+li > a:hover {
+  background-color: #8e8d8a;
+  /*     color: #F172A1; */
+  /*  color: #ffc107;*/
+  color: #eae7dc;
+
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+li > a:active {
+  background-color: #8e8d8a;
+  color: #e64398;
+  padding: -4px -4px;
+  opacity: 1;
+  font-weight: bold;
 }
 
 /*********************************************** MAIN ******************************************************/
-.main{
-    background: linear-gradient(to bottom, #501f3a 0%, #cb2d6f 100%);
-    height: 1000px;
-    padding: 5% 10%;}
+.main {
+  /*  background: linear-gradient(to bottom, #501f3a 0%, #cb2d6f 100%); */
+  background: linear-gradient(to bottom, #e98074 0%, #eae7dc 75%);
 
-
-.card{
-    background-color: #ffffff;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    border-radius: 40px;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.picture{
-    background-color: #f9f7e2;
-    width: 10vw;
-    height: 10vh;
-    display: block;
-    border-radius: 50%;
-    align-content: center;
-    display: block;
-    width: 30%;
-    border-radius: 50%;
-    padding: 20px;
-    background-color: #14A098;
-    
-}
-.profile{
-    width: 30%;
-    border-radius: 50%;
-    padding: 5px;
-    background-color: #cccccc;
-
-}
-.iconos{
-    background-color: #faf089;
-    display: block;
-    width: 80%;
+  padding: 5% 10%;
 }
 
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.picture {
+  background-color: #f9f7e2;
+  width: 10vw;
+  height: 10vh;
+  display: block;
+  border-radius: 50%;
+  align-content: center;
+  display: block;
+  width: 30%;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #14a098;
+}
+.profile {
+  width: 30%;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #e98074;
+}
+.iconos {
+  background-color: #faf089;
+  display: block;
+  width: 80%;
+  padding: 5vh 0;
+}
 
 /*********************************************** FOOTER ******************************************************/
 
-.footer{
-    background-color: #fee1fe;
+/* .footer {
+  background-color: #fee1fe;
+}
+ */
+
+footer {
+    height: 12vh;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vh;
+    background-color: #EAE7DC;
+}
+
+.span {
+    display: block;
+    display: flex;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #E85A4F;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.ico {
+    display: block;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+i {
+    color: #E85A4F;
 }
 
 /*********************************************** MEDIA QUERY ******************************************************/
