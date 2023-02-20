@@ -19,6 +19,8 @@
   justify-content: flex-end;
   align-items: center;
   background-color: #e98074;
+  position: sticky;
+  top:0;
 }
 ul {
   list-style-type: none;
@@ -71,7 +73,10 @@ li > a:active {
 
   padding: 5% 10%;
 }
-
+h1{
+  color: #f9f7e2;
+  font-size: 20px;
+}
 .card {
   background-color: #ffffff;
   width: 100%;
@@ -80,7 +85,9 @@ li > a:active {
   border-radius: 40px;
   align-items: center;
   flex-direction: column;
-  
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 25px 1px rgba(232, 90, 79, 0.2);
+ 
 }
 .picture {
   background-color: #f9f7e2;
@@ -90,16 +97,17 @@ li > a:active {
   border-radius: 50%;
   align-content: center;
   display: block;
-  width: 30%;
+  width: 20%;
   border-radius: 50%;
   padding: 20px;
-  background-color: #14a098;
+/*   background-color: #14a098; */
+
 }
 .profile {
-  width: 30%;
+  width: 25%;
   border-radius: 50%;
-  padding: 3px;
-  background-color: #e98074;
+  padding: 5px;
+  background-color: rgb(234, 231, 220);
 }
 .iconos {
   background-color: #faf089;
@@ -108,6 +116,27 @@ li > a:active {
   padding: 5vh 0;
 }
 
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #d8c3a5;
+  border: 2px solid #e64398;
+}
+.grid-item{
+  background-color: #f9f7e2; 
+  border: 3px solid #e98074;
+  display: block;
+  padding:20px;
+  text-align: center;
+  box-shadow: 2px 2px 25px 1px rgba(232, 90, 79, 0.2);
+
+}
+.grid-item>i{
+  box-shadow: 2px 2px 25px 1px rgba(232, 90, 79, 0.2);
+
+}
 /*********************************************** FOOTER ******************************************************/
 
 /* .footer {
@@ -130,8 +159,8 @@ footer {
     display: block;
     display: flex;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-    color: #E85A4F;
+    font-size: 14px;
+    color: rgb(232, 90, 79);
     letter-spacing: 0;
     line-height: 28px;
 }
@@ -139,12 +168,13 @@ footer {
 .ico {
     display: block;
     display: flex;
-    width: 30%;
+    width: 20%;
     justify-content: space-around;
 }
 
 i {
     color: #E85A4F;
+    font-size: 22px;
 }
 
 /*********************************************** MEDIA QUERY ******************************************************/
