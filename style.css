@@ -224,4 +224,12 @@ i {
 .span{
   font-size: 10px;
 }
+h2{
+  margin-bottom: 5vh;
+  font-size: 3vh;
+}
+h2>i{
+  font-size: 3vh;
+  color: #fff8aa;
+}
 }
