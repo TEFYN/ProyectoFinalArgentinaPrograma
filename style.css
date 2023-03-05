@@ -126,16 +126,36 @@ h1{
   height: 100%;  
 }
 
+.info>h5{
+  display: inline-block;
+  color: #d8c3a5;
+  letter-spacing: 2px;
+}
+.info>h3{
+  display: inline-block;
+  color:#e98074;
+  letter-spacing: 2px;
+  font-size: 32px;
+  padding: 3vh 0 2vh;
+
+}
+
+.info{
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items:center;
+padding-bottom: 30px;
+content-visibility: visible;
+}
+
 .grid-container{
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  /* background-color: #d8c3a5;
-  border: 2px solid #e64398; */
   background-color:#ffffff;
 }
 .grid-item{
-  background-color: #f9f7e2; 
-  /* border: 3px solid #e98074; */
+  background-color: #f9f7e2;  
   display: block;
   padding:20px;
   text-align: center;
@@ -187,11 +207,26 @@ i {
   .profile {
     width: 30%; 
   }
+  .info{
+    padding-bottom: 5vh;
+  }
+  .info>h3{
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
 }
 
 @media screen and (max-width: 768px){
   .profile {
     width: 35%; 
+  }
+  .info{
+    padding-bottom: 5vh;
+  }
+  .info>h3{
+    font-size: 26px;
+    letter-spacing: 2px;
   }
 }
 
@@ -207,7 +242,7 @@ i {
   display: block;
   width: 80%;
 
-  padding: 5vh ;
+  padding: vh ;
 }
 
   .grid-container{
@@ -232,4 +267,16 @@ h2>i{
   font-size: 3vh;
   color: #fff8aa;
 }
+.info>h5{
+  display: inline-block;
+  color: #d8c3a5;
+  letter-spacing: 2px;
 }
+.info>h3{
+  font-size: 22px;
+  padding: 3vh 0 0vh;
+  letter-spacing: 2px;
+}
+
+}
+
